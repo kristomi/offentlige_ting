@@ -1,0 +1,49 @@
+<style>
+html {
+  font-size: 62.5% !important;
+}
+h1 {
+  counter-reset: h2counter;
+}
+
+h2:before {
+  counter-reset: h3counter;
+  counter-increment: h2counter;
+  content: counter(h2counter) ".\0000a0\0000a0";
+}
+
+h3:before {
+  counter-reset: h4counter;
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+}
+
+h4:before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+}
+body {
+  font-size: 1.5em !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  font-family: Calibri, sans-serif !important;
+  color: #222 !important; }
+
+h1, h2, h3, h4 {
+  font-family: Calibri, sans-serif !important;
+	margin-top: 0 !important;
+  margin-bottom: 2rem !important;
+  font-weight: bold !important; }
+h2 {
+	font-size: 24px;
+  color: rgb(57,87,117);
+}
+h3 {
+	font-size: 20px;
+  color: rgb(214,127,22);
+}
+h4 {
+	font-size: 14px;
+  color: rgb(57,87,117);
+}
+</style>
