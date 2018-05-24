@@ -33,11 +33,6 @@ body {
   counter-reset: section subsection subsubsection;
 }
 
-h1:after {
-    content: url('https://www.menon.no/wp-content/uploads/2017logo@2x.png');
-    float: right;
-}
-
 h2 {
   counter-reset: subsection;
 }
